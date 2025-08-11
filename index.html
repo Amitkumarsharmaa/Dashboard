@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="pageWrapper">
+      <!-- sidebar -->
+      <aside class="sidebar" id="sidebar">
+         <div class="toggle">
+         <i class='bx  bx-menu' id="btn"></i> 
+        </div> 
+        <div class="logo-box">
+          <img src="images/logo.jpeg" alt="logos" />
+
+          <span class="Techs">Techs</span>
+        </div>
+        <div class="side-bar">
+          <ul class="nav-list">
+            <li>
+              <a href="">
+                <!-- <i class='bx  bx-wifi-0'  ></i>  -->
+                <span class="links_name">MAIN</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-grid-alt"></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+              <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-user"></i>
+                <span class="links_name">User</span>
+              </a>
+              <span class="tooltip">User</span>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-chat"></i>
+                <span class="links_name">Messages</span>
+              </a>
+              <span class="tooltip">Messages</span>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-pie-chart-alt-2"></i>
+                <span class="links_name">Analytics</span>
+              </a>
+              <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-folder"></i>
+                <span class="links_name">Files</span>
+              </a>
+              <span class="tooltip">Files</span>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-cart-alt"></i>
+                <span class="links_name">Order</span>
+              </a>
+              <span class="tooltip">Order</span>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-heart"></i>
+                <span class="links_name">Saved</span>
+              </a>
+              <span class="tooltip">Saved</span>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-cog"></i>
+                <span class="links_name">Settings</span>
+              </a>
+              <span class="tooltip">Settings</span>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bx-bar-chart"></i>
+                <span class="links_name">Chart</span>
+              </a>
+              <span class="tooltip">Chart</span>
+            </li>
+            <li><i class="bx bx-menu"></i></li>
+          </ul>
+        </div>
+      </aside>
+        <!-- Header -->
+        <header class="header">
+          <nav class="nav container">
+            <div class="search-container">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search for results..."
+              />
+              <button id="search-btn">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <div class="side-button">
+              <!-- Button to trigger the side panel -->
+              <button id="openPanelBtn" class="gear-button">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+
+              <!-- Side Panel content -->
+              <div id="sidePanel" class="side-panel">
+                <div class="side-panel-content">
+                  <span class="close-btn" id="closePanelBtn">&times;</span>
+                  <ul class="nav-lists">
+                    <li class="nav-items">
+                      <a href="#" class="nav-links">Home</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#" class="nav-links">About us</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#" class="nav-links">News</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#" class="nav-links">Gallery</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#" class="nav-links">Events</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#" class="nav-links">Pricing</a>
+                    </li>
+                    <li class="nav-items">
+                      <a href="#" class="nav-links">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="nav-mobile">
+              <ul class="list">
+                <li class="list-item">
+                  <a href="#" class="list-link current"
+                    ><i class="fa-solid fa-house-chimney"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="fa-solid fa-cart-plus"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="fa-solid fa-bell"></i
+                  ></a>
+                </li>
+                <li class="list-item dropdown">
+                  <button class="list-link dropdown-btn place-items-center">
+                    <i class="fa-solid fa-grip"></i
+                    ><i class="ri-arrow-drop-right-line"></i>
+                  </button>
+                  <ul class="list dropdown-menu">
+                    <li class="list-item">
+                      <a href="#" class="list-link">Servers</a>
+                    </li>
+                    <li class="list-item">
+                      <a href="#" class="list-link">Servers</a>
+                    </li>
+                    <li class="list-item">
+                      <a href="#" class="list-link">Servers</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <button
+                class="icon-btn menu-toggle-btn menu-toggle-close place-items-center"
+              >
+                <i class="ri-close-line"></i>
+              </button>
+            </div>
+            <div class="align-right">
+              <button
+                class="icon-btn menu-toggle-btn menu-toggle-open place-items-center"
+              >
+                <i class="ri-function-line"></i>
+              </button>
+              <button class="icon-btn theme-toggle-btn place-items-center">
+                <i class="ri-sun-line theme-light-icon"></i>
+                <i class="ri-moon-line theme-dark-icon"></i>
+              </button>
+              <button class="icon-btn place-items-center">
+                <i class="ri-user-3-line"></i>
+              </button>
+            </div>
+          </nav>
+        </header>
+        <!-- <div class="home-section"> -->
+        <main>
+          <!-- Floating-background-image -->
+          <div class="floating-background-image">
+            <img src="images/dash.png" alt="dash image" />
+          </div>
+          <!-- Welcome-message -->
+          <section class="welcome-message">
+            <div class="container">
+              <h2 class="title independent-title">Dashboard</h2>
+              <div class="card">
+                <div class="card-header">
+                  <small>Getting Start</small>
+                  <h2 class="title">Welcome Back, Admin</h2>
+                </div>
+                <div class="card-body d-grid">
+                  <div class="card-image">
+                    <img
+                      src="images/server.svg"
+                      alt="server image"
+                      class="internal-image"
+                    />
+                  </div>
+                  <div class="card-information">
+                    <h1 class="title main-title">
+                      Affordable, powerful, and reliable servers
+                    </h1>
+                    <p class="card-description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      At eos atque eius! Sed suscipit nostrum unde. Fugiat
+                      tempore officiis voluptates atque corporis totam maiores,
+                      amet, omnis quibusdam voluptate praesentium impedit.
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ad non accusamus perferendis cum, nihil veritatis iste
+                      eaque porro praesentium voluptates ratione obcaecati fugit
+                      distinctio odio suscipit harum, sit nulla deleniti!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Management-area -->
+          <section class="management-area">
+            <div class="management-area-container container d-grid">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="title">Quick Actions</h2>
+                  <small>Access frequently visited places quicker</small>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="card-body-link">
+                    <i class="ri-server-line"></i>Manage server
+                  </a>
+                  <a href="#" class="card-body-link">
+                    <i class="ri-shield-line"></i>Security settings
+                  </a>
+                  <a href="#" class="card-body-link">
+                    <i class="ri-account-line"></i>Manage account
+                  </a>
+                  <a href="#" class="card-body-link">
+                    <i class="ri-bank-card-line"></i>Subscription
+                  </a>
+                </div>
+              </div>
+              <div class="card-group d-grid">
+                <div class="card border-green">
+                  <div>
+                    <h2 class="title">Want more power?</h2>
+                    <p class="card-description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hic perspiciatis consequuntur architecto adipisci earum
+                      quaerat in. Ipsum repellendus perferendis dolorem natus
+                      incidunt, atque voluptate numquam.
+                    </p>
+                  </div>
+                  <button class="list-link">Upgrade now</button>
+                </div>
+                <div class="card border-yellow">
+                  <h2 class="title">Want more power?</h2>
+                  <button class="list-link">Upgrade now</button>
+                </div>
+                <div class="card border-orange">
+                  <h2 class="title">Want more power?</h2>
+                  <button class="list-link">Upgrade now</button>
+                </div>
+                <div class="card border-pink">
+                  <div>
+                    <h2 class="title">Want more power?</h2>
+                    <p class="card-description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hic perspiciatis consequuntur architecto adipisci earum
+                      quaerat in. Ipsum repellendus perferendis dolorem natus
+                      incidunt, atque voluptate numquam.
+                    </p>
+                  </div>
+                  <button class="list-link">Upgrade now</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Project budget -->
+          <section class="chart">
+            <div class="chart-container">
+              <h2>📊 PROJECT BUDGET</h2>
+              <canvas id="budgetChart"></canvas>
+            </div>
+          </section>
+
+          <!-- progress-bar -->
+          <section class="progress-bar">
+            <div class="dashboard">
+              <h3>SALES ACTIVITY</h3>
+
+              <!-- India -->
+              <div class="bar-container">
+                <div class="bar-header">
+                  <span>India</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+                    $32,879 (65%)
+                  </span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill greens" style="width: 65%"></div>
+                </div>
+              </div>
+
+              <!-- Russia -->
+              <div class="bar-container">
+                <div class="bar-header">
+                  <span>Russia</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    $22,710 (55%)
+                  </span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill blues" style="width: 55%"></div>
+                </div>
+              </div>
+
+              <!-- Canada -->
+              <div class="bar-container">
+                <div class="bar-header">
+                  <span>Canada</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+                    $56,291 (69%)
+                  </span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill pinks" style="width: 69%"></div>
+                </div>
+              </div>
+
+              <!-- Brazil -->
+              <div class="bar-container">
+                <div class="bar-header">
+                  <span>Brazil</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    $34,209 (60%)
+                  </span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill oranges" style="width: 60%"></div>
+                </div>
+              </div>
+
+              <!-- United States -->
+              <div class="bar-container">
+                <div class="bar-header">
+                  <span>United States</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    $45,870 (86%)
+                  </span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill reds" style="width: 86%"></div>
+                </div>
+              </div>
+
+              <!-- Germany -->
+              <div class="bar-container">
+                <div class="bar-header">
+                  <span>Germany</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    $67,357 (73%)
+                  </span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill greens" style="width: 73%"></div>
+                </div>
+              </div>
+
+              <!-- UAE -->
+              <div class="bar-container">
+                <div class="bar-header">
+                  <span>U.A.E</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+                    $56,291 (69%)
+                  </span>
+                </div>
+                <div class="bar-bg">
+                  <div class="bar-fill greens" style="width: 69%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline -->
+            <!-- <section class="Time-line"> -->
+            <div class="timeline-container">
+              <div class="timeline-header">TIMELINE</div>
+              <div class="timeline">
+                <div class="timeline-item red">
+                  <div class="timeline-content">
+                    <div>
+                      <h4>Anita Letterback</h4>
+                      <p>Lorem ipsum dolor tempor incididunt .</p>
+                    </div>
+                    <div class="timeline-date">23 Sep, 2021</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item green">
+                  <div class="timeline-content">
+                    <div>
+                      <h4>Paddy O'Furniture</h4>
+                      <p>Lorem ipsum dolor tempor incididunt .</p>
+                    </div>
+                    <div class="timeline-date">16 Aug, 2021</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item purple">
+                  <div class="timeline-content">
+                    <div>
+                      <h4>Olive Yew</h4>
+                      <p>Lorem ipsum dolor tempor incididunt .</p>
+                    </div>
+                    <div class="timeline-date">23 Feb, 2021</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item orange">
+                  <div class="timeline-content">
+                    <div>
+                      <h4>Maureen Biologist</h4>
+                      <p>Lorem ipsum dolor tempor incididunt .</p>
+                    </div>
+                    <div class="timeline-date">21 June, 2021</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item cyan">
+                  <div class="timeline-content">
+                    <div>
+                      <h4>Peg Legge</h4>
+                      <p>Lorem ipsum dolor tempor incididunt .</p>
+                    </div>
+                    <div class="timeline-date">04 Aug, 2021</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item purple">
+                  <div class="timeline-content">
+                    <div>
+                      <h4>Letterbac</h4>
+                      <p>Lorem ipsum dolor tempor incididunt .</p>
+                    </div>
+                    <div class="timeline-date">04 Aug, 2021</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item red">
+                  <div class="timeline-content">
+                    <div>
+                      <h4>Anita Letterback</h4>
+                      <p>Lorem ipsum dolor tempor incididunt .</p>
+                    </div>
+                    <div class="timeline-date">23 Sep, 2021</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-container container">
+            <span class="copyright-information">
+              &copy; 2025 Dell Laptop. All rights reserved.
+            </span>
+            <ul class="list">
+              <li class="list-item">
+                <a href="#" class="list-link">Terms and conditions</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-link">Privacy policy</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-link">Refund policy</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+    </div>
+
+    <!-- Script     -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
